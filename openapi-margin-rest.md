@@ -295,8 +295,8 @@ symbol   | string | 币对名称, 如BTC/USDT
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---
-symbol   | string | 币对名称, 如BTC/USDT
+---|---|--- 
+symbol   | string | 币对名称
 base   | string | 计价货币 BTC
 quote   | string | 交易货币 USDT
 leverage   | string | 杠杆倍数
