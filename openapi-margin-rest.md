@@ -361,6 +361,7 @@ HTTP GET /api/margin/v1/account/list
 无
 
 返回结果参数
+
 名称   | 类型  | 说明
 ---|---|---
 symbol   | string | 币对名称
