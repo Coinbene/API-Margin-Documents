@@ -717,6 +717,7 @@ Response:
 HTTP GET /api/margin/v1/order/openOrders
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol      | string | 否 | 币对名称，如BTC/USDT
@@ -823,6 +824,7 @@ Response:
 HTTP GET /api/margin/v1/order/closedOrders
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol      | string | 否 | 币对名称，如BTC/USDT
@@ -913,6 +915,7 @@ Response:
 HTTP GET /api/margin/v1/order/info
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 orderId      | string | 是 | 委托单ID
@@ -980,6 +983,7 @@ Response:
 HTTP GET /api/margin/v1/order/trade/fills
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 orderId      | string | 是 | 委托单ID
@@ -1066,6 +1070,7 @@ Response:
 HTTP POST /api/margin/v1/order/cancel
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 orderId      | string | 是 | 委托单ID
@@ -1107,6 +1112,7 @@ Response:
 HTTP GET /api/margin/v1/account/unRepayOrderList
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol      | string | 否 | 币对名称 如BTC/USDT
@@ -1179,6 +1185,7 @@ Response:
 HTTP GET /api/margin/v1/account/finishRepayOrderList
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol      | string | 否 | 币对名称 如BTC/USDT
