@@ -659,6 +659,7 @@ Response:
 HTTP POST /api/margin/v1/order/place
 ```
 请求参数：
+
 名称  | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol      | string | 是 | 币对名称，如BTC/USDT，用"/"分割
