@@ -1,4 +1,4 @@
-# REST行情与交易接口
+# coinbene-margin-rest 杠杆openapi rest接口说明
 
 [TOC]
 
@@ -201,7 +201,7 @@ class TestUtil(unittest.TestCase):
 ### 公共接口-获取全部交易配置信息
 ```
 获取交易所全部币对配置列表
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/tradePair/list
 ```
 请求参数：
@@ -284,7 +284,7 @@ Response:
 ### 公共接口-获取指定交易币对配置信息
 ```
 获取交易所全部币对配置列表
-限速规则：5次/2秒
+限速规则：3次/1秒
 HTTP GET /api/margin/v1/tradePair/one
 ```
 请求参数：
@@ -354,7 +354,7 @@ Response:
 
 ```
 获取杠杆用户资产的全部账户信息
-限速次数：3次/1秒
+限速次数：2次/1秒
 HTTP GET /api/margin/v1/account/list
 ```
 
@@ -443,7 +443,7 @@ Response:
 
 ```
 获取杠杆用户指定资产的账户信息
-限速次数：10次/2秒
+限速次数：3次/1秒
 HTTP GET /api/margin/v1/account/one
 ```
 
@@ -517,7 +517,7 @@ Response:
 
 ```
 获取查询指定账户资产最大可借数量
-限速次数：10次/2秒
+限速次数：3次/1秒
 HTTP GET /api/margin/v1/account/max-borrow
 ```
 
@@ -563,7 +563,7 @@ Response:
 
 ```
 获取查询指定账户资产最大可借数量
-限速次数：10次/2秒
+限速次数：5次/1秒
 HTTP POST /api/margin/v1/account/borrow
 ```
 
@@ -608,7 +608,7 @@ Response:
 
 ```
 获取查询指定账户资产最大可借数量
-限速次数：10次/2秒
+限速次数：5次/1秒
 HTTP POST /api/margin/v1/account/borrow
 ```
 
@@ -655,7 +655,7 @@ Response:
 
 ```
 按用户输入进行下单操作
-限速规则：10次/2秒
+限速规则：5次/1秒
 HTTP POST /api/margin/v1/order/place
 ```
 请求参数：
@@ -714,7 +714,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/openOrders
 ```
 请求参数：
@@ -821,7 +821,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/closedOrders
 ```
 请求参数：
@@ -912,7 +912,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：10次/2秒
+限速规则：5次/1秒
 HTTP GET /api/margin/v1/order/info
 ```
 请求参数：
@@ -980,7 +980,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/trade/fills
 ```
 请求参数：
@@ -1067,7 +1067,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：10次/2秒
+限速规则：5次/1秒
 HTTP POST /api/margin/v1/order/cancel
 ```
 请求参数：
@@ -1109,7 +1109,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/account/unRepayOrderList
 ```
 请求参数：
@@ -1182,7 +1182,7 @@ Response:
 
 ```
 按用户请求进行订单列表查询，
-限速规则：5次/2秒
+限速规则：2次/1秒
 HTTP GET /api/margin/v1/account/finishRepayOrderList
 ```
 请求参数：
