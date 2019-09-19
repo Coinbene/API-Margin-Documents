@@ -447,9 +447,10 @@ HTTP GET /api/margin/v1/account/one
 
 Request parameter
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | yes | asset name/abbreviation, such as BTC
+
 
 Return result parameter
 
@@ -518,7 +519,7 @@ HTTP GET /api/margin/v1/account/max-borrow
 
 Request parameter
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
 Asset | string | yes | asset name/abbreviation, such as BTC
@@ -564,7 +565,7 @@ HTTP POST /api/margin/v1/account/borrow
 
 Request parameter
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
 Asset | string | yes | asset name/abbreviation, such as BTC
@@ -609,7 +610,7 @@ HTTP POST /api/margin/v1/account/borrow
 
 Request parameter
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
 Asset | string | yes | asset name/abbreviation, such as BTC
@@ -653,7 +654,7 @@ HTTP POST /api/margin/v1/order/place
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | yes | currency pair name, such as BTC/USDT, separated by "/"
 accountType | string | yes | fixed value margin
@@ -712,7 +713,7 @@ HTTP GET /api/margin/v1/order/openOrders
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | no | currency pair name, such as BTC/USDT
 latestOrderId | string | No | Order id, used by page, the default value is empty, return the latest 20 data, displayed in reverse order by order id. Get the last order id-1, take the next page of data
@@ -819,7 +820,7 @@ HTTP GET /api/margin/v1/order/closedOrders
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | no | currency pair name, such as BTC/USDT
 latestOrderId | string | No | Order id, used by page, the default value is empty, return the latest 20 data, displayed in reverse order by order id. Get the last order id-1, take the next page of data
@@ -910,7 +911,7 @@ HTTP GET /api/margin/v1/order/info
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 orderId | string | yes | order ID
 
@@ -977,7 +978,7 @@ HTTP GET /api/margin/v1/order/trade/fills
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 orderId | string | yes | order ID
 
@@ -1064,7 +1065,7 @@ HTTP POST /api/margin/v1/order/cancel
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 orderId | string | yes | order ID
 
@@ -1105,7 +1106,7 @@ HTTP GET /api/margin/v1/account/unRepayOrderList
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | no | currency pair name such as BTC/USDT
 Asset | string | no | asset name such as BTC
@@ -1178,7 +1179,7 @@ HTTP GET /api/margin/v1/account/finishRepayOrderList
 ```
 Request parameters:
 
-Name | Type | Required / Description
+Name | Type | Required | Description
 ---|---|---|---
 Symbol | string | no | currency pair name such as BTC/USDT
 Asset | string | no | asset name such as BTC
