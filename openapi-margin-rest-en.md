@@ -1,4 +1,6 @@
-# REST Quotes and Trading Interface
+# Explanation of coinbene-margin-rest lever OpenAPI rest interface
+[中文版本](https://github.com/Coinbene/API-Margin-Documents/blob/master/openapi-margin-rest.md)
+
 
 [TOC]
 
@@ -201,7 +203,7 @@ class TestUtil(unittest.TestCase):
 ### Public Interface - Get all transaction configuration information
 ```
 Get the exchange currency pair configuration list
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 2 times / 1 seconds
 HTTP GET /api/margin/v1/tradePair/list
 ```
 Request parameters:
@@ -284,7 +286,7 @@ Response:
 ### Public interface - Get the specified transaction currency pair configuration information
 ```
 Get the exchange currency pair configuration list
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 3 times / 2 seconds
 HTTP GET /api/margin/v1/tradePair/one
 ```
 Request parameters:
@@ -441,7 +443,7 @@ Response:
 
 ```
 Obtain account information for leveraged user-specified assets
-Speed ​​limit: 10 times / 2 seconds
+Speed ​​limit: 3 times / 1 seconds
 HTTP GET /api/margin/v1/account/one
 ```
 
@@ -513,7 +515,7 @@ Response:
 
 ```
 Get the maximum loanable amount of the specified account asset
-Speed ​​limit: 10 times / 2 seconds
+Speed ​​limit: 3 times / 1 seconds
 HTTP GET /api/margin/v1/account/max-borrow
 ```
 
@@ -559,7 +561,7 @@ Response:
 
 ```
 Get the maximum loanable amount of the specified account asset
-Speed ​​limit: 10 times / 2 seconds
+Speed ​​limit: 3 times / 1 seconds
 HTTP POST /api/margin/v1/account/borrow
 ```
 
@@ -600,11 +602,11 @@ Response:
 ```
 
 
-### Private Interface - Coin
+### Private Interface - Coin borrow
 
 ```
 Get the maximum loanable amount of the specified account asset
-Speed ​​limit: 10 times / 2 seconds
+Speed ​​limit: 5 times / 1 seconds
 HTTP POST /api/margin/v1/account/borrow
 ```
 
@@ -649,7 +651,7 @@ Response:
 
 ```
 Order by user input
-Speed ​​limit rule: 10 times / 2 seconds
+Speed ​​limit rule: 5 times / 1 seconds
 HTTP POST /api/margin/v1/order/place
 ```
 Request parameters:
@@ -708,7 +710,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 2 times / 1 seconds
 HTTP GET /api/margin/v1/order/openOrders
 ```
 Request parameters:
@@ -815,7 +817,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 2 times / 1 seconds
 HTTP GET /api/margin/v1/order/closedOrders
 ```
 Request parameters:
@@ -906,7 +908,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 10 times / 2 seconds
+Speed ​​limit rule: 3 times / 1 seconds
 HTTP GET /api/margin/v1/order/info
 ```
 Request parameters:
@@ -973,7 +975,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 3 times / 1 seconds
 HTTP GET /api/margin/v1/order/trade/fills
 ```
 Request parameters:
@@ -1060,7 +1062,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 10 times / 2 seconds
+Speed ​​limit rule: 3 times / 1 seconds
 HTTP POST /api/margin/v1/order/cancel
 ```
 Request parameters:
@@ -1101,7 +1103,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 3 times / 1 seconds
 HTTP GET /api/margin/v1/account/unRepayOrderList
 ```
 Request parameters:
@@ -1174,7 +1176,7 @@ Response:
 
 ```
 Order list query by user request,
-Speed ​​limit rule: 5 times / 2 seconds
+Speed ​​limit rule: 3 times / 1 seconds
 HTTP GET /api/margin/v1/account/finishRepayOrderList
 ```
 Request parameters:
