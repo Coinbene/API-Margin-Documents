@@ -522,12 +522,14 @@ HTTP GET /api/margin/v1/account/max-borrow
 ```
 
 请求参数
+
 名称   | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol   | string | 是 | 币对名称/缩写，如BTC/USDT
 asset   | string | 是 | 资产名称/缩写，如BTC
 
 返回结果参数
+
 名称   | 类型  | 说明
 ---|---|---
 max   | string | 最大可借数量
@@ -566,6 +568,7 @@ HTTP POST /api/margin/v1/account/borrow
 ```
 
 请求参数
+
 名称   | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol   | string | 是 | 币对名称/缩写，如BTC/USDT
@@ -573,6 +576,7 @@ asset   | string | 是 | 资产名称/缩写，如BTC
 quantity   | string | 是 | 借币数量
 
 返回结果参数
+
 名称   | 类型  | 说明
 ---|---|---
 data   | boolean| 返回true借币成功，其它失败返回异常code
@@ -609,6 +613,7 @@ HTTP POST /api/margin/v1/account/borrow
 ```
 
 请求参数
+
 名称   | 类型  | 是否必填  | 说明
 ---|---|---|---
 symbol   | string | 是 | 币对名称/缩写，如BTC/USDT
@@ -616,8 +621,8 @@ asset   | string | 是 | 资产名称/缩写，如BTC
 quantity   | string | 是 | 借币数量
 orderId   | string | 否 | 借币数量
 
-
 返回结果参数
+
 名称   | 类型  | 说明
 ---|---|---
 data   | boolean| 返回true还币成功，其它失败返回异常code
