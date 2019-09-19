@@ -289,13 +289,13 @@ HTTP GET /api/margin/v1/tradePair/one
 ```
 请求参数：
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 symbol   | string | 币对名称, 如BTC/USDT
 
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 symbol   | string | 币对名称, 如BTC/USDT
 base   | string | 计价货币 BTC
 quote   | string | 交易货币 USDT
@@ -362,7 +362,7 @@ HTTP GET /api/margin/v1/account/list
 
 返回结果参数
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 symbol   | string | 币对名称
 forceClosePrice   | string | 爆仓价格
 riskRate   | string | 风险率
@@ -525,7 +525,7 @@ asset   | string | 是 | 资产名称/缩写，如BTC
 
 返回结果参数
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 max   | string | 最大可借数量
 
 ```
@@ -570,7 +570,7 @@ quantity   | string | 是 | 借币数量
 
 返回结果参数
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 data   | boolean| 返回true借币成功，其它失败返回异常code
 
 ```
@@ -615,7 +615,7 @@ orderId   | string | 否 | 借币数量
 
 返回结果参数
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 data   | boolean| 返回true还币成功，其它失败返回异常code
 
 ```
@@ -668,7 +668,7 @@ clientId      | string | 否 | 用户请求id，透传返回给用户
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 orderId   | string | 生成的订单id
 clientId   | string | 用户请求的clientId
 
@@ -723,7 +723,7 @@ latestOrderId      | string | 否 | 订单id，分页使用，默认值为空，
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 orderId   | string | 订单Id
 baseAsset   | string | 基础货币，如BTC
 quoteAsset   | string | 交易货币，如USDT
@@ -828,7 +828,7 @@ latestOrderId      | string | 否 | 订单id，分页使用，默认值为空，
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 orderId   | string | 订单Id
 baseAsset   | string | 基础货币，如BTC
 quoteAsset   | string | 交易货币，如USDT
@@ -912,7 +912,7 @@ orderId      | string | 是 | 委托单ID
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 orderId   | string | 订单Id
 baseAsset   | string | 基础货币，如BTC
 quoteAsset   | string | 交易货币，如USDT
@@ -979,7 +979,7 @@ orderId      | string | 是 | 委托单ID
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 price   | string | 交易价格
 quantity   | string | 交易数量
 amount   | string | 交易金额
@@ -1064,7 +1064,7 @@ orderId      | string | 是 | 委托单ID
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 data   | string | 撤销的订单Id
 
 ```
@@ -1107,7 +1107,7 @@ latestBorrowId      | string | 否 | 借币订单ID
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 borrowId   | string | 借币单Id
 asset   | string | 资产名
 borrowQuantity   | string | 借币数量
@@ -1179,7 +1179,7 @@ latestBorrowId      | string | 否 | 借币订单ID
 返回字段说明：
 
 名称   | 类型  | 说明
----|---|---|---
+---|---|---
 borrowId   | string | 借币单Id
 asset   | string | 资产名
 borrowQuantity   | string | 借币数量
