@@ -1,4 +1,5 @@
 # coinbene-margin-rest 杠杆openapi rest接口说明
+# [English](https://github.com/Coinbene/API-USDT-SWAP-Documents/blob/master/openapi-usdt-swap-rest-en.md)
 
 [TOC]
 
