@@ -454,6 +454,7 @@ HTTP GET /api/margin/v1/account/one
 symbol   | string | 是 | 资产名称/缩写，如BTC
 
 返回结果参数
+
 名称   | 类型  | 说明
 ---|---|---
 symbol   | string | 币对名称
