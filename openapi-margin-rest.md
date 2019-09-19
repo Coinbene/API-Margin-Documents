@@ -288,9 +288,10 @@ Response:
 HTTP GET /api/margin/v1/tradePair/one
 ```
 请求参数：
-名称   | 类型  | 说明
+
+名称|类型|说明
 ---|---|---
-symbol   | string | 币对名称, 如BTC/USDT
+symbol|string|币对名称, 如BTC/USDT
 
 返回字段说明：
 
