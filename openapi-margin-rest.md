@@ -1,4 +1,3 @@
-# coinbene-margin-rest 杠杆openapi rest接口说明
 [英文文版本](https://github.com/Coinbene/API-Margin-Documents/blob/master/openapi-margin-rest-en.md)
 
 * [基本信息](#基本信息)
