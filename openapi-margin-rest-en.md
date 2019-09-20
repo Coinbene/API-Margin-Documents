@@ -2,7 +2,27 @@
 [中文版本](https://github.com/Coinbene/API-Margin-Documents/blob/master/openapi-margin-rest.md)
 
 
-[TOC]
+   * [Basic Information](#basic-information)
+   * [restriction of visit](#restriction-of-visit)
+   * [Interface Type](#interface-type)
+   * [Signature](#signature)
+   * [Interface Specification](#interface-specification)
+      * [Public Interface - Get all transaction configuration information](#public-interface---get-all-transaction-configuration-information)
+      * [Public interface - Get the specified transaction currency pair configuration information](#public-interface---get-the-specified-transaction-currency-pair-configuration-information)
+      * [Private Interface - Query all account information](#private-interface---query-all-account-information)
+      * [Private Interface - Query specified account asset information](#private-interface---query-specified-account-asset-information)
+      * [Private Interface - Query the maximum loanable amount of the specified account asset](#private-interface---query-the-maximum-loanable-amount-of-the-specified-account-asset)
+      * [Private Interface - Borrowing Coins](#private-interface---borrowing-coins)
+      * [Private Interface - Coin borrow](#private-interface---coin-borrow)
+      * [Private Interface - Order](#private-interface---order)
+      * [Private Interface - Query the current list of delegate orders](#private-interface---query-the-current-list-of-delegate-orders)
+      * [Private Interface - Query History Order List](#private-interface---query-history-order-list)
+      * [Private Interface - Query specified order information](#private-interface---query-specified-order-information)
+      * [Private Interface - Query Order Transactions List](#private-interface---query-order-transactions-list)
+      * [Private Interface - Undo the specified order](#private-interface---undo-the-specified-order)
+      * [Private Interface - Unpaid Loan List](#private-interface---unpaid-loan-list)
+      * [Private Interface - Also pay off the list of bills](#private-interface---also-pay-off-the-list-of-bills)
+         
 
 ## Basic Information
 - This section lists the baseurl for the REST interface: http://openapi-exchange.coinbene.com or https://openapi-exchange.coinbene.com
