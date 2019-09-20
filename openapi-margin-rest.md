@@ -1,5 +1,3 @@
-[英文文版本](https://github.com/Coinbene/API-Margin-Documents/blob/master/openapi-margin-rest-en.md)
-
 * [基本信息](#基本信息)
       * [访问限制](#访问限制)
       * [接口类型](#接口类型)
