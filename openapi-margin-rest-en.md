@@ -13,7 +13,7 @@
       * [Private Interface - Query specified account asset information](#private-interface---query-specified-account-asset-information)
       * [Private Interface - Query the maximum loanable amount of the specified account asset](#private-interface---query-the-maximum-loanable-amount-of-the-specified-account-asset)
       * [Private Interface - Borrowing Coins](#private-interface---borrowing-coins)
-      * [Private Interface - Coin borrow](#private-interface---coin-borrow)
+      * [Private Interface - Coin repayment](#private-interface---coin-repayment)
       * [Private Interface - Order](#private-interface---order)
       * [Private Interface - Query the current list of delegate orders](#private-interface---query-the-current-list-of-delegate-orders)
       * [Private Interface - Query History Order List](#private-interface---query-history-order-list)
@@ -623,12 +623,12 @@ Response:
 ```
 
 
-### Private Interface - Coin borrow
+### Private Interface - Coin repayment
 
 ```
 Get the maximum loanable amount of the specified account asset
 Speed ​​limit: 5 times / 1 seconds
-HTTP POST /api/margin/v1/account/borrow
+HTTP POST /api/margin/v1/account/repayment
 ```
 
 Request parameter
