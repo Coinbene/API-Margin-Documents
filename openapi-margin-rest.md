@@ -632,7 +632,7 @@ Response:
 ```
 获取查询指定账户资产最大可借数量
 限速次数：5次/1秒
-HTTP POST /api/margin/v1/account/borrow
+HTTP POST /api/margin/v1/account/repayment
 ```
 
 请求参数
