@@ -66,7 +66,7 @@ ACCESS-SIGN的值生成规则：
 - Method是请求方法，字母全部大写：GET/POST
 - requestPath是请求接口路径，例如：/api/exchange/v2/market/orderBook
 - body是指请求主体的字符串。GET请求没有body信息可省略；POST请求有body信息JSON串，例如{"symbol":"BTCUSDT","order_id":"7440"}
-- secket为用户申请API时所生成的。
+- secret为用户申请API时所生成的。
 
 接口请求样例：
 - GET协议接口两种情况: 
@@ -235,13 +235,13 @@ HTTP GET /api/margin/v1/tradePair/list
 名称   | 类型  | 说明
 ---|---|--- 
 symbol   | string | 币对名称, 如BTC/USDT
-base   | string | 计价货币 BTC
-quote   | string | 交易货币 USDT
+base   | string | 交易货币 BTC
+quote   | string | 计价货币 USDT
 leverage   | string | 杠杆倍数
 pricePrecision   | string | 价格精度
 volumePrecision   | string | 数量精度
-takerFee   | string | taker手续费
-makeFee   | string | maker手续费
+takerFee   | string | taker手续费率
+makeFee   | string | maker手续费率
 minAmount   | string | 最新成交数量
 priceChangeScale   | string | 价格波动限制
 sellDisabled   | string | 禁止卖单操作，0允许，1禁止
@@ -321,13 +321,13 @@ symbol|string|币对名称, 如BTC/USDT
 名称   | 类型  | 说明
 ---|---|--- 
 symbol   | string | 币对名称
-base   | string | 计价货币 BTC
-quote   | string | 交易货币 USDT
+base   | string | 交易货币 BTC
+quote   | string | 计价货币 USDT
 leverage   | string | 杠杆倍数
 pricePrecision   | string | 价格精度
 volumePrecision   | string | 数量精度
-takerFee   | string | taker手续费
-makeFee   | string | maker手续费
+takerFee   | string | taker手续费率
+makeFee   | string | maker手续费率
 minAmount   | string | 最新成交数量
 priceChangeScale   | string | 价格波动限制
 sellDisabled   | string | 禁止卖单操作，0允许，1禁止
@@ -759,15 +759,15 @@ latestOrderId      | string | 否 | 订单id，分页使用，默认值为空，
 名称   | 类型  | 说明
 ---|---|---
 orderId   | string | 订单Id
-baseAsset   | string | 基础货币，如BTC
-quoteAsset   | string | 交易货币，如USDT
+base   | string | 交易货币 BTC
+quote   | string | 计价货币 USDT
 orderDirection   | string | 方向
 quantity   | string | 订单数量
 filledQuantity   | string | 已成交数量
 amount   | string | 订单金额
 filledAmount   | string | 已成交金额
 avgPrice   | string | 平均价格
-orderStatus   | string | 订单状态，未成交：open 完全成交：filled 取消：cancelled 部分成交：partiallyCancelled
+orderStatus   | string | 订单状态，未成交：Open 完全成交：Filled 取消：Cancelled 部分成交：Partially cancelled
 orderTime   | string | 下单时间
 fee   | string | 手续费
 
@@ -865,8 +865,8 @@ latestOrderId      | string | 否 | 订单id，分页使用，默认值为空，
 名称   | 类型  | 说明
 ---|---|---
 orderId   | string | 订单Id
-baseAsset   | string | 基础货币，如BTC
-quoteAsset   | string | 交易货币，如USDT
+base   | string | 交易货币 BTC
+quote   | string | 计价货币 USDT
 orderDirection   | string | 方向
 quantity   | string | 订单数量
 amount   | string | 订单金额
@@ -874,7 +874,7 @@ filledAmount   | string | 已成交金额
 takerFeeRate   | string | taker费率
 makerFeeRate   | string | maker费率
 avgPrice   | string | 平均价格
-orderStatus   | string | 订单状态，未成交：open 完全成交：filled 取消：cancelled 部分成交：partially cancelled
+orderStatus   | string | 订单状态，未成交：Open 完全成交：Filled 取消：Cancelled 部分成交：Partially cancelled
 orderTime   | string | 下单时间
 totalFee   | string | 手续费
 
@@ -950,8 +950,8 @@ orderId      | string | 是 | 委托单ID
 名称   | 类型  | 说明
 ---|---|---
 orderId   | string | 订单Id
-baseAsset   | string | 基础货币，如BTC
-quoteAsset   | string | 交易货币，如USDT
+base   | string | 交易货币 BTC
+quote   | string | 计价货币 USDT
 orderDirection   | string | 方向，1：买 2：买
 quantity   | string | 订单数量
 amount   | string | 订单金额
