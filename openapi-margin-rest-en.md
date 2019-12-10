@@ -234,10 +234,10 @@ Return field description:
 
 Name | Type | Description
 ---|---|---
-Symbol | string | currency pair name, such as BTC/USDT
-Base | string | pricing currency BTC
-Quote | string | Trading Currency USDT
-Leverage | string | leverage multiple
+symbol | string | currency pair name, such as BTC/USDT
+base | string | Trading currency BTC
+quote | string | pricing Currency USDT
+leverage | string | leverage multiple
 pricePrecision | string | Price accuracy
 volumePrecision | string | quantity accuracy
 takerFee | string | taker fee
@@ -314,16 +314,16 @@ Request parameters:
 
 Name|type|description
 ---|---|---
-Symbol|string|coin pair name, such as BTC/USDT
+symbol|string|coin pair name, such as BTC/USDT
 
 Return field description:
 
 Name | Type | Description
 ---|---|---
-Symbol | string | currency pair name
-Base | string | pricing currency BTC
-Quote | string | Trading Currency USDT
-Leverage | string | leverage multiple
+symbol | string | currency pair name
+base | string | Trading currency BTC
+quote | string | pricing Currency USDT
+leverage | string | leverage multiple
 pricePrecision | string | Price accuracy
 volumePrecision | string | quantity accuracy
 takerFee | string | taker fee
@@ -386,14 +386,14 @@ Return result parameter
 
 Name | Type | Description
 ---|---|---
-Symbol | string | currency pair name
+symbol | string | currency pair name
 forceClosePrice | string |
 riskRate | string | risk ratio
-Asset | string | asset name
-Available | string | available balance
-Borrow | string |
-Frozen | string | frozen quantity
-Interest | string | interest amount
+asset | string | asset name
+available | string | available balance
+borrow | string |
+frozen | string | frozen quantity
+interest | string | interest amount
 
 ```
 Request:
@@ -479,14 +479,14 @@ Return result parameter
 
 Name | Type | Description
 ---|---|---
-Symbol | string | currency pair name
+symbol | string | currency pair name
 forceClosePrice | string |
 riskRate | string | risk ratio
-Asset | string | asset name
-Available | string | available balance
-Borrow | string |
-Frozen | string | frozen quantity
-Interest | string | interest amount
+asset | string | asset name
+available | string | available balance
+borrow | string |
+frozen | string | frozen quantity
+interest | string | interest amount
 
 ```
 Request:
@@ -544,14 +544,14 @@ Request parameter
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
-Asset | string | yes | asset name/abbreviation, such as BTC
+symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
+asset | string | yes | asset name/abbreviation, such as BTC
 
 Return result parameter
 
 Name | Type | Description
 ---|---|---
-Max | string | maximum borrowable quantity
+max | string | maximum borrowable quantity
 
 ```
 Request:
@@ -590,15 +590,15 @@ Request parameter
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
-Asset | string | yes | asset name/abbreviation, such as BTC
-Quantity | string | yes |
+symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
+asset | string | yes | asset name/abbreviation, such as BTC
+quantity | string | yes |
 
 Return result parameter
 
 Name | Type | Description
 ---|---|---
-Data | boolean| Returns true to borrow success, other failures return exception code
+data | boolean| Returns true to borrow success, other failures return exception code
 
 ```
 Request:
@@ -635,16 +635,16 @@ Request parameter
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
-Asset | string | yes | asset name/abbreviation, such as BTC
-Quantity | string | yes |
+symbol | string | yes | currency pair name/abbreviation, such as BTC/USDT
+asset | string | yes | asset name/abbreviation, such as BTC
+quantity | string | yes |
 orderId | string | no |
 
 Return result parameter
 
 Name | Type | Description
 ---|---|---
-Data | boolean| Returns true coin return success, other failures return exception code
+data | boolean| Returns true coin return success, other failures return exception code
 
 ```
 Request:
@@ -679,12 +679,12 @@ Request parameters:
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | yes | currency pair name, such as BTC/USDT, separated by "/"
+symbol | string | yes | currency pair name, such as BTC/USDT, separated by "/"
 accountType | string | yes | fixed value margin
-Direction | string | yes | direction, buy: buy sell: sell
-Price | string | yes | order price
+direction | string | yes | direction, buy: buy sell: sell
+price | string | yes | order price
 orderType | string | yes | order type, only limit order limit
-Quantity | string | yes | quantity
+quantity | string | yes | quantity
 clientId | string | no | user request id, transparently returned to the user
 
 
@@ -738,7 +738,7 @@ Request parameters:
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | no | currency pair name, such as BTC/USDT
+symbol | string | no | currency pair name, such as BTC/USDT
 latestOrderId | string | No | Order id, used by page, the default value is empty, return the latest 20 data, displayed in reverse order by order id. Get the last order id-1, take the next page of data
 
 
@@ -753,17 +753,17 @@ Return field description:
 Name | Type | Description
 ---|---|---
 orderId | string | Order Id
-baseAsset | string | base currency, such as BTC
-quoteAsset | string | Trading currency, such as USDT
+baseAsset | string | Trading currency, such as BTC
+quoteAsset | string | pricing currency, such as USDT
 orderDirection | string | direction
-Quantity | string | order quantity
-FillQuantity | string | Number of transactions
-Amount | string | order amount
+quantity | string | order quantity
+fillQuantity | string | Number of transactions
+amount | string | order amount
 filledAmount | string |
 avgPrice | string | Average price
 orderStatus | string | Order status, unfilled: open Completed: filled Cancel: canceled Partial deal: partialCancelled
 orderTime | string | Order time
-Fee | string | handling fee
+fee | string | handling fee
 
 
 ```
@@ -859,11 +859,11 @@ Return field description:
 Name | Type | Description
 ---|---|---
 orderId | string | Order Id
-baseAsset | string | base currency, such as BTC
-quoteAsset | string | Trading currency, such as USDT
+base | string | Trading currency BTC
+quote | string | pricing Currency USDT
 orderDirection | string | direction
-Quantity | string | order quantity
-Amount | string | order amount
+quantity | string | order quantity
+amount | string | order amount
 filledAmount | string |
 takerFeeRate | string | taker rate
 makerFeeRate | string | maker rate
@@ -947,8 +947,8 @@ orderId | string | Order Id
 baseAsset | string | base currency, such as BTC
 quoteAsset | string | Trading currency, such as USDT
 orderDirection | string | Direction, 1: Buy 2: Buy
-Quantity | string | order quantity
-Amount | string | order amount
+quantity | string | order quantity
+amount | string | order amount
 filledAmount | string |
 takerFeeRate | string | taker rate
 makerFeeRate | string | maker rate
@@ -1010,11 +1010,11 @@ Return field description:
 
 Name | Type | Description
 ---|---|---
-Price | string | transaction price
-Quantity | string | Number of transactions
-Amount | string | transaction amount
-Fee | string | handling fee
-Direction | string | direction
+price | string | transaction price
+quantity | string | Number of transactions
+amount | string | transaction amount
+fee | string | handling fee
+direction | string | direction
 tradeTime | string | Order trading time, international time
 feeByConi | string | coni deduction
 
@@ -1096,7 +1096,7 @@ Return field description:
 
 Name | Type | Description
 ---|---|---
-Data | string | Undo Order Id
+data | string | Undo Order Id
 
 ```
 Request:
@@ -1131,8 +1131,8 @@ Request parameters:
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | no | currency pair name such as BTC/USDT
-Asset | string | no | asset name such as BTC
+symbol | string | no | currency pair name such as BTC/USDT
+asset | string | no | asset name such as BTC
 latestBorrowId | string | no | loan order ID
 
 Return field description:
@@ -1140,10 +1140,10 @@ Return field description:
 Name | Type | Description
 ---|---|---
 borrowId | string | Borrower Id
-Asset | string | asset name
-BorrowQuantity | string |
-Interest | string |
-RepayQuantity | string | paid principal amount
+asset | string | asset name
+borrowQuantity | string |
+interest | string |
+repayQuantity | string | paid principal amount
 repayInterest | string |
 
 ```
@@ -1204,8 +1204,8 @@ Request parameters:
 
 Name | Type | Required | Description
 ---|---|---|---
-Symbol | string | no | currency pair name such as BTC/USDT
-Asset | string | no | asset name such as BTC
+symbol | string | no | currency pair name such as BTC/USDT
+asset | string | no | asset name such as BTC
 latestBorrowId | string | no | loan order ID
 
 Return field description:
@@ -1213,10 +1213,10 @@ Return field description:
 Name | Type | Description
 ---|---|---
 borrowId | string | Borrower Id
-Asset | string | asset name
-BorrowQuantity | string |
-Interest | string |
-RepayQuantity | string | paid principal amount
+asset | string | asset name
+borrowQuantity | string |
+interest | string |
+repayQuantity | string | paid principal amount
 repayInterest | string |
 
 ```
