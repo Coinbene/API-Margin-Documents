@@ -23,6 +23,7 @@
       * [Private Interface - Unpaid Loan List](#private-interface---unpaid-loan-list)
       * [Private Interface - Also pay off the list of bills](#private-interface---also-pay-off-the-list-of-bills)
          
+* [Error Code Summary] (#Error Code Summary)
 
 ## Basic Information
 - This section lists the baseurl for the REST interface: http://openapi-exchange.coinbene.com or https://openapi-exchange.coinbene.com
@@ -1249,3 +1250,25 @@ Response:
     ]
 }
 ```
+
+## 错误代码汇总
+
+error code     |  message
+---|:---
+429 | Requests are too frequent
+10001 | "ACCESS_KEY" cannot be empty
+10002 | "ACCESS_SIGN" cannot be empty
+10003 | "ACCESS_TIMESTAMP" cannot be empty
+10005 | Invalid ACCESS_TIMESTAMP
+10006 | Invalid ACCESS_KEY
+10007 | Invalid Content_Type, please use "application / json" format
+10008 | Request timestamp expired
+10009 | System Error
+11000 | Required parameter cannot be empty
+11001 | Parameter value error
+11002 | The parameter value exceeds the maximum limit
+11003 | No data returned by third-party interface
+11004 | Order price accuracy does not match
+11005 | The currency pair has not yet opened leverage
+11007 | Coin pair does not match asset
+
