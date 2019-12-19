@@ -1251,9 +1251,9 @@ Response:
 }
 ```
 
-## 错误代码汇总
+## Error Code Summary
 
-error code     |  message
+Error code | message
 ---|:---
 429 | Requests are too frequent
 10001 | "ACCESS_KEY" cannot be empty
