@@ -23,7 +23,7 @@
       * [Private Interface - Unpaid Loan List](#private-interface---unpaid-loan-list)
       * [Private Interface - Also pay off the list of bills](#private-interface---also-pay-off-the-list-of-bills)
          
-* [Error Code Summary] (#Error Code Summary)
+* [Error Code Summary](#error-code-summary)
 
 ## Basic Information
 - This section lists the baseurl for the REST interface: http://openapi-exchange.coinbene.com or https://openapi-exchange.coinbene.com
