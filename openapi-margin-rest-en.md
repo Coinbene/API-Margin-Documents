@@ -135,7 +135,7 @@ preHash: 2019-09-11T09:10:08.238ZPOST/api/margin/v1/account/borrow{"symbol":"BTC
 ```
 Source string: 2019-09-11T09:11:12.141ZGET/api/margin/v1/account/list
 Secret:978672ddedbd1c5340a83a277b2ac654
-Generate a string of characters: b7c941f76626bc1bf6cfbfd8789d5aed47b221829c25fd6729b7f969abd18718
+Generate a string of characters: 5aa0c737234f837f06cfc15a42dad7b64d781ce468f85c8b3e7deb24054b8715
 
 Sample code (Java version):
 **
