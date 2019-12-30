@@ -306,7 +306,7 @@ Response:
 
 ### 公共接口-获取指定交易币对配置信息
 ```
-获取交易所全部币对配置列表
+获取交易所指定币对配置
 限速规则：3次/1秒
 HTTP GET /api/margin/v1/tradePair/one
 ```
@@ -585,7 +585,7 @@ Response:
 ### 私有接口-借币
 
 ```
-获取查询指定账户资产最大可借数量
+用户请求借币接口
 限速次数：5次/1秒
 HTTP POST /api/margin/v1/account/borrow
 ```
@@ -630,7 +630,7 @@ Response:
 ### 私有接口-还币
 
 ```
-获取查询指定账户资产最大可借数量
+用户请求还币接口
 限速次数：5次/1秒
 HTTP POST /api/margin/v1/account/repayment
 ```
@@ -677,7 +677,7 @@ Response:
 ### 私有接口-下单
 
 ```
-按用户输入进行下单操作
+按用户输入进行杠杆下单操作
 限速规则：5次/1秒
 HTTP POST /api/margin/v1/order/place
 ```
@@ -736,7 +736,7 @@ Response:
 ### 私有接口-查询当前委托挂单列表
 
 ```
-按用户请求进行订单列表查询，
+按用户请求进行当前委托挂单列表查询，
 限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/openOrders
 ```
@@ -843,7 +843,7 @@ Response:
 ### 私有接口-查询历史委托单列表
 
 ```
-按用户请求进行订单列表查询，
+按用户请求查询历史委托单列表
 限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/closedOrders
 ```
@@ -934,7 +934,7 @@ Response:
 ### 私有接口-查询指定订单信息
 
 ```
-按用户请求进行订单列表查询，
+按用户请求进行指定单查询，
 限速规则：5次/1秒
 HTTP GET /api/margin/v1/order/info
 ```
@@ -1002,7 +1002,7 @@ Response:
 ### 私有接口-查询订单成交明细列表
 
 ```
-按用户请求进行订单列表查询，
+按用户请求进行订单明细列表查询，
 限速规则：2次/1秒
 HTTP GET /api/margin/v1/order/trade/fills
 ```
@@ -1089,7 +1089,7 @@ Response:
 ### 私有接口-撤销指定委托单
 
 ```
-按用户请求进行订单列表查询，
+按用户请求撤销指定委托单
 限速规则：5次/1秒
 HTTP POST /api/margin/v1/order/cancel
 ```
@@ -1131,7 +1131,7 @@ Response:
 ### 私有接口-未还清借币单列表
 
 ```
-按用户请求进行订单列表查询，
+按用户请求进行未还清借币单列表查询，
 限速规则：2次/1秒
 HTTP GET /api/margin/v1/account/unRepayOrderList
 ```
@@ -1204,7 +1204,7 @@ Response:
 ### 私有接口-还还清借币单列表
 
 ```
-按用户请求进行订单列表查询，
+按用户请求查询还清借币单列表
 限速规则：2次/1秒
 HTTP GET /api/margin/v1/account/finishRepayOrderList
 ```
