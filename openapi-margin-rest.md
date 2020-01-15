@@ -952,7 +952,7 @@ orderId      | string | 是 | 委托单ID
 orderId   | string | 订单Id
 base   | string | 交易货币 BTC
 quote   | string | 计价货币 USDT
-orderDirection   | string | 方向，1：买 2：买
+orderDirection   | string | 方向
 quantity   | string | 订单数量
 amount   | string | 订单金额
 filledAmount   | string | 已成交金额
@@ -984,7 +984,7 @@ Response:
     "orderId": "1911862608898764800", 
     "baseAsset": "BTC", 
     "quoteAsset": "USDT", 
-    "orderDirection": "2", 
+    "orderDirection": "buy", 
     "quantity": "54", 
     "amount": "3645", 
     "filledAmount": "0", 
